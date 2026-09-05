@@ -12,13 +12,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+const foodRoutes = require("./routes/foodRoutes");
+
+app.use("/api/foods", foodRoutes);
 
 app.get("/", (req, res) => {
     res.json({
         message: "Food Ordering API is running!"
     });
 });
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
