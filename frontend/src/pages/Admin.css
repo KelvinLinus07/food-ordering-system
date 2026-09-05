@@ -1,0 +1,53 @@
+.admin-page {
+  padding: 2.5rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.admin-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-header h1 {
+  font-size: 1.9rem;
+}
+
+.admin-header p {
+  color: var(--ink-soft);
+  margin-top: 0.35rem;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.admin-form-col {
+  position: sticky;
+  top: 90px;
+  scroll-margin-top: 90px;
+}
+
+.admin-toolbar {
+  margin-bottom: 1rem;
+}
+
+.admin-list-col .category-filter {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form-col {
+    position: static;
+  }
+}

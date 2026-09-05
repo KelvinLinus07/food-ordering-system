@@ -1,0 +1,17 @@
+.favorites-page {
+  padding: 2.5rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.favorites-header {
+  margin-bottom: 1.75rem;
+}
+
+.favorites-header h1 {
+  font-size: 1.9rem;
+}
+
+.favorites-header p {
+  color: var(--ink-soft);
+  margin-top: 0.35rem;
+}
