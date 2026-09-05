@@ -92,31 +92,3 @@ The project demonstrates the integration of a **React frontend, REST API backend
 
 
 
-🏗️ Project Architecture
-
-text
-                    ┌─────────────────────┐
-                    │       Customer      │
-                    │      Web Browser    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │       + Vite        │
-                    └──────────┬──────────┘
-                               │
-                         REST API Calls
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Express Backend   │
-                    │      Node.js        │
-                    └──────────┬──────────┘
-                               │
-                         Mongoose ODM
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    MongoDB Atlas    │
-                    └─────────────────────┘
